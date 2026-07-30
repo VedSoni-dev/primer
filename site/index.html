@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>primer — the record belongs to the child</title>
+<meta name="description" content="Someone is going to build the Primer from The Diamond Age. YC asked for it by name. This is the open, local-first learner record that makes sure no one company ends up owning a generation's childhood.">
+<meta property="og:title" content="primer — the record belongs to the child">
+<meta property="og:description" content="A tutor a generation grows up with is not an education product. It is the most intimate influence infrastructure ever proposed. Here are the terms, written as code.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📕</text></svg>">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="wordmark" href="#top">primer<span class="cursor" aria-hidden="true">_</span></a>
+  <nav>
+    <a href="#rfs">the ask</a>
+    <a href="#threat">the threat</a>
+    <a href="#terms">the terms</a>
+    <a href="#callout">receipts</a>
+    <a class="ghost" href="https://github.com/VedSoni-dev/primer">GitHub</a>
+  </nav>
+</header>
+
+<!-- ───────────────────────── HERO ───────────────────────── -->
+<section id="top" class="hero">
+  <div class="hazard hazard-top" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="kicker"><span class="dot" aria-hidden="true"></span> Apache-2.0 · local-first · no telemetry · no account</p>
+
+    <h1 class="glitch" data-text="Someone is going to build the Primer.">
+      Someone is going to build the Primer.
+    </h1>
+
+    <p class="lede">
+      Y Combinator asked for it by name. The technology is here. The honest half of the pitch
+      is <em>true</em> — every child deserves the tutoring only wealthy children get today.
+    </p>
+
+    <p class="lede warn">
+      The other half is that whoever builds it ends up holding
+      <strong>years of adaptation per child, millions of children, behind one login.</strong>
+      That is not an education product. That is the most intimate influence
+      infrastructure ever proposed.
+    </p>
+
+    <p class="lede">
+      So this repository exists to settle the terms while the record is still small
+      enough to belong to families. One SQLite file. On your machine. Yours.
+    </p>
+
+    <div class="cta-row">
+      <a class="btn primary" href="https://github.com/VedSoni-dev/primer">Read the code</a>
+      <a class="btn" href="#terms">See the terms</a>
+    </div>
+
+    <pre class="hero-code" aria-label="install command">curl -fsSL https://raw.githubusercontent.com/VedSoni-dev/primer/main/install.sh | sh</pre>
+  </div>
+
+  <div class="hazard hazard-bottom" aria-hidden="true"></div>
+</section>
+
+<!-- ───────────────────────── THE ASK ───────────────────────── -->
+<section id="rfs" class="band">
+  <div class="wrap">
+    <p class="eyebrow reveal">01 — the ask</p>
+    <h2 class="reveal">YC put it on the list. Publicly. In writing.</h2>
+    <p class="body reveal">
+      Fall 2026 Requests for Startups. Thirteen ideas YC wants funded. The first one is
+      called <strong>The Primer</strong>, written by Andrew Miklas, and it is a straight
+      description of Neal Stephenson's <em>A Young Lady's Illustrated Primer</em> as a
+      consumer product.
+    </p>
+    <p class="body reveal">
+      Nothing here is leaked, subtweeted, or inferred. It is a screenshot of a public page.
+      Read it yourself and notice which sentence does the work.
+    </p>
+
+    <figure class="shot reveal">
+      <div class="shot-chrome">
+        <span class="tl-dot r"></span><span class="tl-dot y"></span><span class="tl-dot g"></span>
+        <span class="tl-url">ycombinator.com/rfs#the-primer</span>
+      </div>
+      <img src="assets/yc-rfs-primer.png"
+           alt="Screenshot of Y Combinator's Requests for Startups entry titled The Primer, by Andrew Miklas, describing an adaptive AI tutor modeled on A Young Lady's Illustrated Primer from The Diamond Age."
+           loading="lazy">
+      <figcaption>
+        Captured from <a href="https://www.ycombinator.com/rfs#the-primer">ycombinator.com/rfs</a>,
+        Fall 2026 Requests for Startups. Quoted here for criticism and comment. © Y Combinator.
+      </figcaption>
+    </figure>
+
+    <div class="pullquote reveal">
+      <blockquote>
+        “it is also the entry point to far greater ambitions.”
+      </blockquote>
+      <p class="attrib">— YC RFS, <em>The Primer</em></p>
+    </div>
+
+    <p class="body reveal">
+      Read that as an investor and it means a large market. Read it as a parent and it means
+      the reading app is the wedge, and the wedge goes somewhere. YC is not hiding this.
+      They wrote it down. <strong>Believe them.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ───────────────────────── THE THREAT ───────────────────────── -->
+<section id="threat" class="band dark">
+  <div class="hazard hazard-top thin" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow danger reveal">02 — the threat model</p>
+    <h2 class="reveal">A primer is the book you read first.</h2>
+
+    <p class="body reveal">
+      To <strong>prime</strong> someone is to decide, before they decide anything, what will
+      come easily to their mind later. That is the word. That has always been the word.
+    </p>
+
+    <p class="body reveal">
+      To teach a child well you need to know things about her that nobody else writes down.
+      A good tutor holds all of it in their head for one year. A record holds it forever.
+      That is exactly why it teaches — and exactly why it is dangerous.
+    </p>
+
+    <!-- animated record readout -->
+    <div class="record reveal" data-record>
+      <div class="record-head">
+        <span class="rec-dot" aria-hidden="true"></span>
+        <span>learner_context("Ada")</span>
+        <span class="record-meta">28 tools · one call</span>
+      </div>
+      <ul class="record-lines" aria-label="Example of what a learner record contains">
+        <li data-line><span class="k">misconception</span> reads every short e as short i <span class="t">persisted 4 sessions</span></li>
+        <li data-line><span class="k">frustration</span> shuts down when a timer is visible <span class="t">2 markers</span></li>
+        <li data-line><span class="k">interest</span> dinosaurs; will work twice as long <span class="t">stable 6 wks</span></li>
+        <li data-line><span class="k">trust</span> works for dad, not for the app's voice <span class="t">observed</span></li>
+        <li data-line><span class="k">self-belief</span> says “I'm bad at reading” after 2 misses <span class="t">verbatim</span></li>
+        <li data-line><span class="k">attention</span> loses her at minute 11 <span class="t">n=37</span></li>
+        <li data-line><span class="k">accommodation</span> no countdowns, no streaks <span class="t">parent-set</span></li>
+        <li data-line class="bad" data-final><span class="k">↳ in other hands</span> this is not a lesson plan. It is a manual for pointing her somewhere.</li>
+      </ul>
+    </div>
+
+    <p class="body reveal">
+      Every line above is the kind of row that makes teaching work. Every line above is also
+      a lever. The file does not know the difference. <strong>Only the terms do.</strong>
+    </p>
+
+    <!-- scale animation -->
+    <div class="scale-viz reveal" data-scale>
+      <div class="scale-row">
+        <div class="scale-num"><span data-count-to="1">1</span></div>
+        <p>child. One adult holds the whole picture. This is what a good tutor already is, and it is fine.</p>
+      </div>
+      <div class="scale-row">
+        <div class="scale-num"><span data-count-to="1095">0</span><span class="plus">days of one childhood</span></div>
+        <p>Now run it for three years. The record stops being a snapshot and becomes a trajectory: not what she knows, but how she bends.</p>
+      </div>
+      <div class="scale-row alarm">
+        <div class="scale-num"><span data-count-to="8000000">0</span><span class="plus">childhoods</span></div>
+        <p>Now scale it the way a company must. One login in front of all of it. Nobody has to be malicious. Engagement to defend, renewals to protect, a board to answer to. Ordinary incentives are enough.</p>
+      </div>
+      <div class="grid-swarm" aria-hidden="true"><!-- dots injected by JS --></div>
+    </div>
+
+    <div class="alerts">
+      <div class="alert reveal">
+        <span class="alert-tag">FAILURE MODE 01</span>
+        <h3>The company dies and takes the child with it</h3>
+        <p>Every education product ships an interface and treats the child's data as exhaust. Pivot, acquisition, or shutdown, and the record dies. The child starts over. Again. A first-grade teacher inherits a folder of worksheets and a reading level; everything a tutor actually needs evaporates in June.</p>
+      </div>
+      <div class="alert reveal">
+        <span class="alert-tag">FAILURE MODE 02</span>
+        <h3>Portability becomes a feature they will never ship</h3>
+        <p>Once one company holds a few years of a few million childhoods, export is a churn button. No growth team ships a churn button. Terms are settled early or not at all.</p>
+      </div>
+      <div class="alert reveal">
+        <span class="alert-tag">FAILURE MODE 03</span>
+        <h3>The teaching goes into the weights</h3>
+        <p>If the pedagogy lives inside a proprietary model, nobody can read it, fork it, or prove it wrong. A curriculum graph with a bad prerequisite edge quietly mis-teaches a real child, and no outsider can even file the bug.</p>
+      </div>
+      <div class="alert reveal">
+        <span class="alert-tag">FAILURE MODE 04</span>
+        <h3>Engagement machinery aimed at a six-year-old</h3>
+        <p>Streaks, coins, leaderboards, countdown timers. A twelve-minute session that ends on a win beats forty minutes that ends in tears — but only one of those two numbers shows up in a board deck.</p>
+      </div>
+    </div>
+  </div>
+  <div class="hazard hazard-bottom thin" aria-hidden="true"></div>
+</section>
+
+<!-- ───────────────────────── THE TERMS ───────────────────────── -->
+<section id="terms" class="band">
+  <div class="wrap">
+    <p class="eyebrow reveal">03 — the terms, written as code</p>
+    <h2 class="reveal">Open source here is not a license choice. It is the threat model.</h2>
+    <p class="body reveal">
+      Nothing on this page is a promise, a pledge, or a values page. Every item below is a
+      constraint in the repository, and most of them have a test asserting them. That is the
+      only kind of commitment that survives an acquisition.
+    </p>
+
+    <div class="terms-grid">
+      <article class="term reveal">
+        <h3><span class="num">01</span> The record is the product. The interface is disposable.</h3>
+        <p>There is no app in the repository. On purpose. Anything that makes the record depend on a particular UI is a bug. The tutor generates a page for one child for one afternoon and throws it away; the file is the thing that lasts.</p>
+      </article>
+      <article class="term reveal">
+        <h3><span class="num">02</span> One file. On your machine. No sync, ever, in the core.</h3>
+        <p>SQLite, 20 tables, in the family's home directory. Nothing phones home. There is no account, no server, and no API key to leave lying around a family's laptop.</p>
+      </article>
+      <article class="term reveal">
+        <h3><span class="num">03</span> Evidence over scores — auditable row by row.</h3>
+        <p>Every number is derived from append-only observations kept forever. <code>evidence_for</code> returns the raw attempts behind any estimate, verbatim. When a parent asks “why does it think that,” there is an answer, not a vibe.</p>
+      </article>
+      <article class="term reveal">
+        <h3><span class="num">04</span> Export carries the whole history.</h3>
+        <p><code>primer export</code> / <code>primer import</code> round-trip everything — observations, sessions, generated activities, and the curriculum packs the history depends on. The format is documented and versioned in FORMAT.md <em>so that this project is not the only thing able to read a child's record.</em></p>
+      </article>
+      <article class="term reveal">
+        <h3><span class="num">05</span> The child never talks to a model.</h3>
+        <p>The fast loop — a child at play — never calls a model at all. She meets a static HTML page an adult approved. The model works on the record, not on the child.</p>
+      </article>
+      <article class="term reveal">
+        <h3><span class="num">06</span> A review gate no unattended model can lift.</h3>
+        <p>Every generated activity lands in <code>pending_review</code>. No child reaches it until a human approves it. Rejections are read back on the next planning run, so saying no teaches the tutor instead of just blocking it.</p>
+      </article>
+      <article class="term reveal">
+        <h3><span class="num">07</span> The unattended run is caged, and the cage is tested.</h3>
+        <p>No shell, no filesystem, no web, no inherited config, an explicit allowlist of record tools, and a hard budget ceiling enforced by the runtime rather than by our own accounting.</p>
+      </article>
+      <article class="term reveal">
+        <h3><span class="num">08</span> No engagement machinery. Structurally.</h3>
+        <p>No streaks, coins, leaderboards, or countdown timers — and the record is not allowed to encode the opposite. There is nothing in the schema to optimize minutes-on-task with.</p>
+      </article>
+      <article class="term reveal">
+        <h3><span class="num">09</span> Deletable, and it means it.</h3>
+        <p><code>primer delete --learner &lt;name&gt; --yes</code> removes every row, plus that child's recordings and generated activities on disk, and reports any file it could not remove.</p>
+      </article>
+    </div>
+
+    <div class="codecard reveal">
+      <div class="codecard-head">what the unattended tutor is allowed to touch</div>
+<pre><code>claude -p --tools ""                <span class="c"># every built-in tool off: no bash, no fs, no web</span>
+       --strict-mcp-config          <span class="c"># cannot see your other MCP servers</span>
+       --setting-sources ""         <span class="c"># no CLAUDE.md, no hooks, no plugins</span>
+       --mcp-config &lt;primer only&gt;   <span class="c"># reaches this record and nothing else</span>
+       --allowedTools mcp__primer__learner_context,…   <span class="c"># explicit allowlist</span>
+       --max-budget-usd &lt;left today&gt; <span class="c"># ceiling enforced outside our own accounting</span></code></pre>
+      <p class="codecard-foot">The test suite asserts each part of this. Delete a flag, break a test.</p>
+    </div>
+
+    <div class="cant reveal">
+      <h3>What the autonomous loop <span class="strike">can</span> <em>cannot</em> do</h3>
+      <ul>
+        <li>create or delete learners</li>
+        <li>change accommodations</li>
+        <li>set goals</li>
+      </ul>
+      <p>Those tools exist where a human is asking for them, and are deliberately absent from the unattended loop. If the tutor thinks an accommodation is wrong, it writes a note and <strong>a human decides</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── RECEIPTS / CALL-OUT ───────────────────────── -->
+<section id="callout" class="band dark">
+  <div class="hazard hazard-top thin" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow danger reveal">04 — receipts</p>
+    <h2 class="reveal">Nobody in this story has to be a villain.</h2>
+    <p class="body reveal">
+      That is the uncomfortable part. There is no cackling. There is a cap table, a growth
+      target, and a renewal date, and those are enough. So this is not an accusation of
+      anybody's character. It is a note about incentives, addressed to the people who will
+      actually decide how this goes.
+    </p>
+
+    <div class="letters">
+      <article class="letter reveal">
+        <h3>To YC</h3>
+        <p>
+          You wrote the honest sentence out loud: a parent buys it for basic skills, and it is
+          “the entry point to far greater ambitions.” Good. Now fund the version where the
+          ambition is not owning the child's file. Ask every founder who pitches this RFS one
+          question: <strong>can the family walk out with the whole record, in a documented
+          format, on day one?</strong> If the answer needs a slide, it is a no.
+        </p>
+      </article>
+
+      <article class="letter reveal">
+        <h3>To the founder who wins this RFS</h3>
+        <p>
+          You will be told that portability is a v2 feature. It is not. It is the only feature
+          that cannot be added later, because by v2 you will have a retention number that
+          depends on it not existing. Build on an open record now, while it costs you nothing
+          but a weekend, and you get to keep being the person you are today.
+        </p>
+      </article>
+
+      <article class="letter reveal">
+        <h3>To the labs</h3>
+        <p>
+          The model is not the moat and you know it. The moat someone is about to build is
+          <em>the memory of a childhood</em>. If long-horizon tutoring is coming, the state it
+          runs on should be a file the family holds and any model can read — including your
+          competitor's. Anything else and the education layer becomes lock-in with a
+          children's-book skin.
+        </p>
+      </article>
+
+      <article class="letter reveal">
+        <h3>To edtech</h3>
+        <p>
+          A decade of products shipped an interface and treated a child's learning history as
+          exhaust. Then the company pivoted, or was acquired, or shut down, and the history
+          went with it. That is not a rare tragedy, it is the default outcome, and every
+          teacher reading this already knows it because they have re-assessed the same child
+          three times in three years. <strong>Export is not a courtesy. It is the product.</strong>
+        </p>
+      </article>
+
+      <article class="letter reveal">
+        <h3>To parents</h3>
+        <p>
+          The question to ask a tutoring app is not “is it adaptive.” It is: <em>where does
+          the file live, can I read it, can I take it, and who else has a copy?</em> If the
+          answer is a dashboard, the answer is no. You are not being paranoid. You are being
+          the last gate, and this software is built to keep you in that job — the approval
+          screen exists so a model never gets an unsupervised run at your kid.
+        </p>
+      </article>
+
+      <article class="letter reveal">
+        <h3>To teachers and reading specialists</h3>
+        <p>
+          The curriculum graph in this repository is 213 skills, pre-K to grade 3, English
+          only, and somewhere in it a prerequisite edge is wrong. Wrong edges quietly
+          mis-teach real children. You are the only people who can find them. That is a
+          contribution nobody at a startup can outspend you on.
+        </p>
+      </article>
+
+      <article class="letter reveal">
+        <h3>To us — the honest sample size</h3>
+        <p>
+          One child. One week. The curriculum stops at grade 3. The BKT parameters are
+          principled defaults, not fitted to data, and the fitting code <em>refuses to run</em>
+          on a sample this small rather than print a confident number. Releases currently ship
+          a Windows binary only. Anyone claiming more than that about v0.1 — including this
+          page — should be checked against the repo.
+        </p>
+      </article>
+    </div>
+
+    <div class="siren reveal">
+      <p class="siren-line">the open version has to win on what they structurally cannot offer</p>
+      <p class="siren-sub">your child's record is yours · the teaching is inspectable · the curriculum was improved by a thousand teachers instead of a growth team</p>
+    </div>
+  </div>
+  <div class="hazard hazard-bottom thin" aria-hidden="true"></div>
+</section>
+
+<!-- ───────────────────────── WHAT IT IS ───────────────────────── -->
+<section id="what" class="band">
+  <div class="wrap">
+    <p class="eyebrow reveal">05 — what is actually in the box</p>
+    <h2 class="reveal">It is a record and a server. That is the whole trick.</h2>
+
+    <div class="box-grid">
+      <div class="box reveal"><h4>Open Learner Record</h4><p>20-table SQLite schema. Evidence append-only. Full spec in SPEC.md.</p></div>
+      <div class="box reveal"><h4>Mastery model</h4><p>Bayesian Knowledge Tracing over a two-component forgetting curve. Recomputable from raw evidence at any time.</p></div>
+      <div class="box reveal"><h4>Scheduler</h4><p>Ranks lapsed / due / stuck / frontier, spread across strands so a session is not eight vowel drills.</p></div>
+      <div class="box reveal"><h4>Placement</h4><p>A cold start is placed, not assumed. Probes at the band age suggests, bisects to where the child actually is.</p></div>
+      <div class="box reveal"><h4>Curriculum</h4><p>213 skills, pre-K–grade 3, reading / writing / math, with a prerequisite graph that crosses domains.</p></div>
+      <div class="box reveal"><h4>MCP server</h4><p>28 tools. <code>learner_context</code> is the one that matters. Same implementations for the human and unattended paths.</p></div>
+      <div class="box reveal"><h4>Autonomous tutor</h4><p>Drives <code>claude -p</code> on a loop against that server. Your existing login, no API key. Queue, review gate, budget.</p></div>
+      <div class="box reveal"><h4>Surface</h4><p>Localhost. <code>/k/&lt;name&gt;</code> is the only URL a child needs; <code>/review</code> is the adult gate.</p></div>
+    </div>
+
+    <p class="body reveal small">
+      One runtime dependency: the MCP SDK. Storage is <code>node:sqlite</code>, built into Node 22+.
+      The model is reached through the <code>claude</code> binary you already have.
+    </p>
+  </div>
+</section>
+
+<!-- ───────────────────────── CONTRIBUTE ───────────────────────── -->
+<section id="build" class="band closing">
+  <div class="wrap narrow">
+    <p class="eyebrow reveal">06 — none of this matters if it stays small</p>
+    <h2 class="reveal">The proprietary version will have consumer polish and a marketing budget.</h2>
+    <p class="body reveal">
+      That is a real fight and pretending otherwise is stupid. The open version wins on the
+      three things a company structurally cannot offer, and all three are made of
+      contributions: a corrected prerequisite, a curriculum pack past grade 3 or in another
+      language, a bug report from a real child's week.
+    </p>
+
+    <div class="needs reveal">
+      <div class="need"><span class="need-tag">most needed</span><p>Curriculum beyond grade 3, and beyond English. A content job, not an engineering one.</p></div>
+      <div class="need"><span class="need-tag">most needed</span><p>Teachers and reading specialists auditing the prerequisite graph.</p></div>
+      <div class="need"><span class="need-tag">needed</span><p>macOS and Linux release binaries — CI has never successfully run.</p></div>
+      <div class="need"><span class="need-tag">needed</span><p>Real evidence samples so BKT parameters can be fitted instead of assumed.</p></div>
+    </div>
+
+    <div class="cta-row center reveal">
+      <a class="btn primary" href="https://github.com/VedSoni-dev/primer">github.com/VedSoni-dev/primer</a>
+      <a class="btn" href="https://github.com/VedSoni-dev/primer/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+    </div>
+
+    <p class="signoff reveal">
+      Terms are settled early or not at all.<br>
+      <strong>This is early.</strong>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Apache-2.0. Nothing here phones home, including this page — no analytics, no fonts, no third-party requests.</p>
+    <p class="fine">
+      The Y Combinator screenshot and quotation are reproduced for criticism and comment and
+      remain © Y Combinator. <em>The Diamond Age</em> and <em>A Young Lady's Illustrated Primer</em>
+      are Neal Stephenson's. This project is not affiliated with, endorsed by, or funded by
+      either.
+    </p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
