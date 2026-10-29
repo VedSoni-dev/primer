@@ -6,15 +6,16 @@ claim id, then the claim in one sentence, its strength, what depends on it,
 and a fenced `json` provenance block. `scripts/validate-world.mjs` parses
 this structure. Keep it.
 
-Citations below were verified against Crossref metadata on 2026-07-30 by
-resolving each DOI. Verification of a citation is not review of a claim;
-`review` stays `unreviewed` until a named human moves it.
+Citations below were verified against Crossref metadata on 2026-07-30, and the
+2026-10-29 additions against Crossref on that date, by resolving each DOI.
+Verification of a citation is not review of a claim; `review` stays
+`unreviewed` until a named human moves it.
 
 ## spacing/spacing-improves-retention
 
 **Claim.** Practice distributed across time produces better delayed retention than the same amount of practice massed into one session.
 
-**Strength.** strong. Cepeda et al. (2006) is a meta-analysis of 317 experiments in verbal recall; the effect is large, robust, and one of the most replicated findings in learning science.
+**Strength.** strong. Cepeda et al. (2006) is a meta-analysis of 317 experiments in verbal recall; the effect is large, robust, and one of the most replicated findings in learning science. Ruitenburg et al. (2026) corroborate it in the population primer serves: a three-level meta-analysis of 53 studies (2006-2024, 7,303 participants) in authentic primary and secondary classrooms found a spacing effect of g = 0.20, moderated by comparison condition, retention interval, the ISI/RI ratio, and posttest format. The two sources share no authors and the 2026 meta-analysis aggregates a distinct study set, so agreement is 2. The classroom effect is smaller than the laboratory recall effect, which the direction of the claim accommodates: distributed practice still beats massed, by less in the field.
 
 **Depends on this.** `applyEvidence` in `src/domain/bkt.ts` grows the retention half-life as a function of the gap since last practice, not the count of repetitions. Twenty answers in one sitting are treated as one practice occasion.
 
@@ -22,10 +23,11 @@ resolving each DOI. Verification of a citation is not review of a claim;
 {
   "provenance": {
     "sources": [
-      "doi:10.1037/0033-2909.132.3.354"
+      "doi:10.1037/0033-2909.132.3.354",
+      "doi:10.1007/s10648-026-10225-5"
     ],
-    "retrieved": "2026-07-30",
-    "agreement": 1,
+    "retrieved": "2026-10-29",
+    "agreement": 2,
     "review": "unreviewed",
     "reviewer": null,
     "depends_on_claims": []
@@ -60,7 +62,7 @@ resolving each DOI. Verification of a citation is not review of a claim;
 
 **Claim.** Retrieving material from memory strengthens long-term retention more than restudying it for the same time.
 
-**Strength.** strong. Roediger and Karpicke (2006) showed tested prose passages beat restudied ones at a week despite losing at five minutes, and the finding has an extensive replication record.
+**Strength.** strong. Roediger and Karpicke (2006) showed tested prose passages beat restudied ones at a week despite losing at five minutes, and the finding has an extensive replication record. Ruitenburg et al. (2026) corroborate it in classrooms: the same three-level meta-analysis found a testing effect of g = 0.37, moderated by type of knowledge, posttest format, format matching between practice and test phase, and type of learning outcome. The two sources share no authors and draw on distinct study sets, so agreement is 2. The moderator pattern carries a caveat worth recording: the effect was reliable only where retrieval was actually elicited during practice, so an activity that does not make the child retrieve does not earn this effect.
 
 **Depends on this.** Probes are retrieval events, not presentations. Every activity must exercise a skill and report observations; `validateInterface` refuses an activity that records nothing.
 
@@ -68,10 +70,11 @@ resolving each DOI. Verification of a citation is not review of a claim;
 {
   "provenance": {
     "sources": [
-      "doi:10.1111/j.1467-9280.2006.01693.x"
+      "doi:10.1111/j.1467-9280.2006.01693.x",
+      "doi:10.1007/s10648-026-10225-5"
     ],
-    "retrieved": "2026-07-30",
-    "agreement": 1,
+    "retrieved": "2026-10-29",
+    "agreement": 2,
     "review": "unreviewed",
     "reviewer": null,
     "depends_on_claims": []
